@@ -84,7 +84,7 @@ const fetchRequest = (url, method, params) => {
                     console.log('res1:', url, responseData);   //网络请求成功返回的数据
                     if (responseData.Response.code === '40000') {
                         // alert(responseData.Response.code);
-                        DeviceEventEmitter.emit('GoToLogin', '去登录');
+                        // DeviceEventEmitter.emit('GoToLogin', '去登录');
 
                     } else if (responseData.Response.code === 10001) {
                         resolve(responseData);
